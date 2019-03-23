@@ -1,13 +1,29 @@
 {{ define "main" }}
 <div class="flex flex-wrap justify-between">
-    <main class="w-full lg:w-3/5">
-        <header>
-            {{ .Title }}
+    <main class="w-full lg:w-3/5 border border-grey-darkest rounded-lg p-12 custom-home-main">
+        <header class="text-center">
+            <h1 class="mb-10">Florent SIMON <br><br>
+                PSYCHOLOGUE <br>
+                PSYCHOTHERAPEUTE</h1>
         </header>
+        <div class="text-center">
+            <p class="mb-6">Je reçois les enfants, les adolescents et les adultes en consultations psychologiques à mon cabinet libéral.</p>
+            <p class="mb-6">Il se situe 2 rue de l'oratoire, à Nancy.</p>
+            <p class="mb-6">Ce site a pour fonction de répondre aux principales questions que vous vous posez sur les motifs qui peuvent amener à consulter
+                un psychologue ainsi que sur la manière dont se déroulent les consultations.</p>
+            <p>Si vous avez des questions, n’hésitez pas à me contacter directement.</p>
+        </div>
+
         {{ .Content }}
     </main>
-    <aside class="w-full lg:w-1/3 pl-24 bg-grey-light ">
-        <h1 class="text-lg">Contenus sidebar</h1>
+    <aside class="w-full lg:w-1/3 border border-grey-darkest rounded-lg text-center h-full pb-6">
+        <h2 class="text-lg bg-green font-black p-6 mb-6">Prendre RDV</h2>
+        <h3 class="font-black mb-6">Par téléphone</h3>
+        <p class="mb-6">06 89 58 35 85</p>
+        <h3 class="font-black mb-6">Par mail</h3>
+        <p class="mb-6">adresse mail</p>
+        <h3 class="font-black mb-6">En ligne</h3>
+        <a class="block w-1/2 mx-auto shadow-lg bg-green hover:bg-yellow text-black no-underline font-bold py-4 px-6 rounded" href="http://sitetest.reservio.com">Prendre RDV</a>
     </aside>
 </div>
 {{ end }}
