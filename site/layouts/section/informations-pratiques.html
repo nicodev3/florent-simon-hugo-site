@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="w-full">
+    <header class="text-center">
+        <h1 class="mb-10 text-base sm:text-lg md:text-3xl">Informations pratiques</h1>
+    </header>
+    <div class="px-2">
+        <div class="flex -mx-2">
+            <div class="w-1/3 px-2">
+                <div class="border border-grey-darkest rounded-lg mb-4 bg-white">
+                    <h2 class="mb-0 py-4 text-base sm:text-lg md:text-2xl text-center bg-green rounded-t-lg">Honoraires</h2>
+                    <div class="p-4 lg:p-4 mb-2 lg:mb-0">
+                        <p class="text-center font-black"><strong>Le tarif de la consultation est fixé à 50 euros</strong></p>
+                        <h2 class="text-center">Durée</h2>
+                        <p>La consultation dure entre 45 et 60 minutes.</p>
+                        <p>La fréquence des séances sera déterminé avec vous, en fonction de la situation, de vos besoin et de vos attentes.</p>
+                        <h2 class="text-center">Règlement</h2>
+                        <p>En espèces ou par chèque</p>
+                        <h2 class="text-center">Remboursement</h2>
+                        <p>Les consultations chez le psychologue ne sont pas remboursées par la Sécurité Sociale. Néanmoins, de plus en plus de mutuelles prennent en charge tout ou une partie des consultations (par exemple : Allianz, Axa, MGEN...). N'hésitez pas à vous renseigner auprès de votre mutuelle.</p>
+                        <p>Dans ce cadre, une note d'honoraire pourra vous être délivrée à l'issue de chaque séance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 px-2">
+                <div class="lg:mr-2 border border-grey-darkest rounded-lg mb-4 bg-white">
+                    <h2 class="mb-0 py-4 text-base sm:text-lg md:text-2xl text-center bg-green rounded-t-lg">Carte</h2>
+                    <div class="p-4 lg:p-4 mb-2 lg:mb-0">
+
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 px-2">
+                <div class="border border-grey-darkest rounded-lg mb-4 bg-white">
+                    <h2 class="mb-0 py-4 text-base sm:text-lg md:text-2xl text-center bg-green rounded-t-lg">Prendre RDV</h2>
+                    <div class="p-4 lg:p-4 mb-2 lg:mb-0">
+                        <p class="text-center">Le tarif de la consultation est fixé à 50 euros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ .Content }}
+</main>
+{{ end }}

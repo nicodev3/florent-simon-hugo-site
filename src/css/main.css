@@ -67,6 +67,10 @@ html {
     font-weight: 400;
 }
 
+body {
+    background-color: rgba(250, 240, 230, .3);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -88,7 +92,7 @@ p, li {
 
 @media (min-width: 991px) {
     .custom-home-main {
-        background: url(/img/accuei22.png) no-repeat 0 0 / 180px;
+        background: #fff url(/img/accuei22.png) no-repeat 0 0 / 180px;
     }
 
     .custom-enfants {
