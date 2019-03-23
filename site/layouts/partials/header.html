@@ -2,7 +2,7 @@
     <div class="bg-yellow h-6 mb-4"></div>
     <div class="bg-green h-6 mb-4"></div>
     <div class="bg-yellow h-6"></div>
-    <nav class="flex items-center justify-between flex-wrap p-6">
+    <nav class="flex items-center justify-between flex-wrap p-6 pt-0">
         <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-black border-teal-light hover:text-grey-darkest hover:border-white">
                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
@@ -10,27 +10,12 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="flex justify-end lg:flex-grow">
-                <a href="/" class="block mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:text-grey-darkest mr-4">
-                    Accueil
-                </a>
-                <a href="/psychologue-enfants/" class="block mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:text-grey-darkest mr-4">
-                    Enfants
-                </a>
-                <a href="/psychologue-adolescents/" class="block mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:text-grey-darkest mr-4">
-                    Adolescents
-                </a>
-                <a href="/psychologue-adultes/" class="block mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:text-grey-darkest mr-4">
-                    Adultes
-                </a>
-                <a href="/informations-pratiques/" class="block mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:text-grey-darkest mr-4">
-                    Informations pratiques
-                </a>
-                <a href="/florent-simon-psychologue/" class="block mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:text-grey-darkest">
-                    Mon parcours professionnel
-                </a>
-            </div>
-            <div>
-                <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0">Download</a>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li class="block border-t-2 border-r-2 border-b-2 border-l-2 border-black p-2 bg-yellow mt-4 no-underline lg:inline-block lg:mt-0 text-black hover:bg-green custom-menu-link {{ if $currentPage.IsMenuCurrent "main" . }} active {{ end }}">
+                    <a href="{{ .URL }}" class="block no-underline">{{ .Name }}</a>
+                </li>
+                {{ end }}
             </div>
         </div>
     </nav>

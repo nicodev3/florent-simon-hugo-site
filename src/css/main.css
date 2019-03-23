@@ -79,6 +79,14 @@ p, li {
     line-height: 1.40;
 }
 
+a {
+    transition: all .3s ease-out;
+}
+
+.custom-menu-link.active {
+    background-color: #D7D19E;
+}
+
 .Site {
     display: flex;
     min-height: 100vh;
