@@ -71,11 +71,35 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-p {
+p, li {
     line-height: 1.40;
 }
 
-.custom-home-main {
-    background: url(/img/accuei22.png) no-repeat 0 0 / 180px;
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+.Site-content {
+    flex: 1;
+}
+
+
+@media (min-width: 991px) {
+    .custom-home-main {
+        background: url(/img/accuei22.png) no-repeat 0 0 / 180px;
+    }
+
+    .custom-enfants {
+        padding-left: 150px;
+        padding-right: 150px;
+        background-image: url(/img/image014.png), url(/img/image011.png), url(/img/image012.png), url(/img/image013.png), url(/img/image010.png);
+        background-repeat: no-repeat;
+        background-size: 80px;
+        background-position: 2% 10%, 98% 25%, 2% 50%, 98% 75%, 2% 90%;
+    }
+}
+
+
 
