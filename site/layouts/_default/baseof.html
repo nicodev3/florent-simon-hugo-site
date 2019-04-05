@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:400,600" rel="stylesheet">
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
   {{ end }}
 </head>
 
