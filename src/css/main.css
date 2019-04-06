@@ -97,10 +97,38 @@ a {
     flex: 1;
 }
 
+.js-nav-container {
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    background-color: #fff;
+}
+
+.js-nav {
+    display: none;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+
+.js-nav.active {
+    display: block;
+    background-color: #fff;
+    top: 3.5rem
+}
+
+.home-top-color-bar {
+    display: none;
+}
+
 
 @media (min-width: 991px) {
     .custom-home-main {
         background: #fff url(/img/accuei22.png) no-repeat 0 0 / 180px;
+    }
+
+    .home-top-color-bar {
+        display: block;
     }
 
     .custom-enfants {
@@ -111,7 +139,15 @@ a {
         background-size: 80px;
         background-position: 2% 10%, 98% 25%, 2% 50%, 98% 75%, 2% 90%;
     }
+
+    .js-nav {
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
 }
+
 
 
 

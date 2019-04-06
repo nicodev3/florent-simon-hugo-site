@@ -3,4 +3,10 @@
 import "./css/main.css";
 
 // Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+const nav = document.querySelector('.js-nav');
+const navTrigger = document.querySelector('.js-nav-trigger');
+navTrigger.addEventListener('click', function() {
+  nav.classList.toggle('active');
+}, false);
+
+
