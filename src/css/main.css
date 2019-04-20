@@ -83,6 +83,10 @@ a {
     transition: all .3s ease-out;
 }
 
+a:visited {
+    color: #000;
+}
+
 .custom-menu-link.active {
     background-color: #D7D19E;
 }
