@@ -8,5 +8,3 @@ const navTrigger = document.querySelector('.js-nav-trigger');
 navTrigger.addEventListener('click', function() {
   nav.classList.toggle('active');
 }, false);
-
-
